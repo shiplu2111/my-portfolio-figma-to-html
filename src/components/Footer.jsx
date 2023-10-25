@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t-[1.333px] border-[#2829388C] my-[106.67px]">
+        <div className="border-t-[1.333px] border-[#2829388C] mt-[106.67px]">
           <div className="flex items-center justify-between pt-[42.67px]">
             <div>Made with 💖 by Shiplu</div>
             <div>
