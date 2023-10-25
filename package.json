@@ -9,9 +9,11 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "animate.css": "^4.1.1",
+    "next": "13.5.6",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "13.5.6"
+    "react-animation-on-scroll": "^5.1.0",
+    "react-dom": "^18"
   },
   "devDependencies": {
     "autoprefixer": "^10",

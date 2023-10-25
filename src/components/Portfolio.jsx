@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-
+import { AnimationOnScroll } from "react-animation-on-scroll";
 const Portfolio = () => {
   return (
     <>
@@ -28,146 +29,153 @@ const Portfolio = () => {
                 />
               </svg>
             </div>
-            <div>
-              <span className="text-[18.333px] font-[400] leading-[20px] md:text-[21.333px] md:font-[400] md:leading-[32px]  ">
-                Visit My Dribbble
-              </span>
-            </div>
+            <AnimationOnScroll animateIn="animate__bounceIn">
+              <div>
+                <span className="text-[18.333px] font-[400] leading-[20px] md:text-[21.333px] md:font-[400] md:leading-[32px]  ">
+                  Visit My Dribbble
+                </span>
+              </div>
+            </AnimationOnScroll>
           </div>
         </div>
         <div>
           <div className="mt-[106.67px]">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-[42.67px]">
-              <div className="shadow-2xl rounded-[8px]">
-                <div>
-                  <img
-                    className="h-[400px] rounded-[10.667px] bg-cover bg-no-repeat bg-center"
-                    src="/portfolio1.jpg"
-                    alt=""
-                  />
-                </div>
-                <div className="py-[32px] px-[32px]">
+            <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-[42.67px]">
+              <AnimationOnScroll animateIn="animate__fadeInLeft">
+                <div className="shadow-2xl rounded-[8px]">
                   <div>
-                    <div className="text-[32px] font-[700] text-[#282938] leading-[44.8px] ">
-                      Ahuse
-                    </div>
-                    <div className="mt-[10.333px] text-[21.333px] text-[#1C1E53] font-[400] leading-[32px] ">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros.
-                    </div>
+                    <img
+                      className=" object-cover rounded-[10.667px] bg-cover bg-no-repeat bg-center"
+                      src="/portfolio1.jpg"
+                      alt=""
+                    />
                   </div>
-                  <div className="mt-[32px]">
-                    <div className="flex items-center justify-start gap-[16px] ">
-                      <div className="flex items-center gap-[16px]  pb-[10.67px] border-b-[1.333px] border-b-[#5E3BEE] hover:cursor-pointer">
-                        <div className="text-[18.667px] font-[600] leading-[28px] ">
-                          View In Dribbble
-                        </div>
-                        <div>
-                          <svg
-                            width="19"
-                            height="19"
-                            viewBox="0 0 19 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M4.00004 1.66675H17.3334V15.0001M17.3334 1.66675L1.33337 17.6667L17.3334 1.66675Z"
-                              stroke="black"
-                            />
-                          </svg>
+                  <div className="py-[32px] px-[32px]">
+                    <div>
+                      <div className="text-[32px] font-[700] text-[#282938] leading-[44.8px] ">
+                        Ahuse
+                      </div>
+                      <div className="mt-[10.333px] text-[21.333px] text-[#1C1E53] font-[400] leading-[32px] ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros.
+                      </div>
+                    </div>
+                    <div className="mt-[32px]">
+                      <div className="flex items-center justify-start gap-[16px] ">
+                        <div className="flex items-center gap-[16px]  pb-[10.67px] border-b-[1.333px] border-b-[#5E3BEE] hover:cursor-pointer">
+                          <div className="text-[18.667px] font-[600] leading-[28px] ">
+                            View In Dribbble
+                          </div>
+                          <div>
+                            <svg
+                              width="19"
+                              height="19"
+                              viewBox="0 0 19 19"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4.00004 1.66675H17.3334V15.0001M17.3334 1.66675L1.33337 17.6667L17.3334 1.66675Z"
+                                stroke="black"
+                              />
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="shadow-2xl rounded-[8px]">
-                <div>
-                  <img
-                    className="h-[400px] rounded-[10.667px] bg-cover bg-no-repeat bg-center"
-                    src="/portfolio2.png"
-                    alt=""
-                  />
-                </div>
-                <div className="py-[32px] px-[32px]">
+              </AnimationOnScroll>
+              <AnimationOnScroll animateIn="animate__fadeInUp">
+                <div className="shadow-2xl rounded-[8px]">
                   <div>
-                    <div className="text-[32px] font-[700] text-[#282938] leading-[44.8px] ">
-                      App Dashboard
-                    </div>
-                    <div className="mt-[10.333px] text-[21.333px] text-[#1C1E53] font-[400] leading-[32px] ">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros.
-                    </div>
+                    <img
+                      className="object-cover rounded-[10.667px] bg-cover bg-no-repeat bg-center"
+                      src="/portfolio2.png"
+                      alt=""
+                    />
                   </div>
-                  <div className="mt-[32px]">
-                    <div className="flex items-center justify-start gap-[16px] ">
-                      <div className="flex items-center gap-[16px]  pb-[10.67px] border-b-[1.333px] border-b-[#5E3BEE] hover:cursor-pointer">
-                        <div className="text-[18.667px] font-[600] leading-[28px] ">
-                          View In Dribbble
-                        </div>
-                        <div>
-                          <svg
-                            width="19"
-                            height="19"
-                            viewBox="0 0 19 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M4.00004 1.66675H17.3334V15.0001M17.3334 1.66675L1.33337 17.6667L17.3334 1.66675Z"
-                              stroke="black"
-                            />
-                          </svg>
+                  <div className="py-[32px] px-[32px]">
+                    <div>
+                      <div className="text-[32px] font-[700] text-[#282938] leading-[44.8px] ">
+                        App Dashboard
+                      </div>
+                      <div className="mt-[10.333px] text-[21.333px] text-[#1C1E53] font-[400] leading-[32px] ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros.
+                      </div>
+                    </div>
+                    <div className="mt-[32px]">
+                      <div className="flex items-center justify-start gap-[16px] ">
+                        <div className="flex items-center gap-[16px]  pb-[10.67px] border-b-[1.333px] border-b-[#5E3BEE] hover:cursor-pointer">
+                          <div className="text-[18.667px] font-[600] leading-[28px] ">
+                            View In Dribbble
+                          </div>
+                          <div>
+                            <svg
+                              width="19"
+                              height="19"
+                              viewBox="0 0 19 19"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4.00004 1.66675H17.3334V15.0001M17.3334 1.66675L1.33337 17.6667L17.3334 1.66675Z"
+                                stroke="black"
+                              />
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div className="shadow-2xl rounded-[8px]">
-                <div>
-                  <img
-                    className="h-[400px] rounded-[10.667px] bg-cover bg-no-repeat bg-center"
-                    src="/portfolio3.png"
-                    alt=""
-                  />
-                </div>
-                <div className="py-[32px] px-[32px]">
+              </AnimationOnScroll>
+              <AnimationOnScroll animateIn="animate__fadeInRight">
+                <div className="shadow-2xl rounded-[8px]">
                   <div>
-                    <div className="text-[32px] font-[700] text-[#282938] leading-[44.8px] ">
-                      Easy Rent
-                    </div>
-                    <div className="mt-[10.333px] text-[21.333px] text-[#1C1E53] font-[400] leading-[32px] ">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Suspendisse varius enim in eros.
-                    </div>
+                    <img
+                      className="object-cover rounded-[10.667px] bg-cover bg-no-repeat bg-center"
+                      src="/portfolio3.png"
+                      alt=""
+                    />
                   </div>
-                  <div className="mt-[32px]">
-                    <div className="flex items-center justify-start gap-[16px] ">
-                      <div className="flex items-center gap-[16px]  pb-[10.67px] border-b-[1.333px] border-b-[#5E3BEE] hover:cursor-pointer">
-                        <div className="text-[18.667px] font-[600] leading-[28px] ">
-                          View In Dribbble
-                        </div>
-                        <div>
-                          <svg
-                            width="19"
-                            height="19"
-                            viewBox="0 0 19 19"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M4.00004 1.66675H17.3334V15.0001M17.3334 1.66675L1.33337 17.6667L17.3334 1.66675Z"
-                              stroke="black"
-                            />
-                          </svg>
+                  <div className="py-[32px] px-[32px]">
+                    <div>
+                      <div className="text-[32px] font-[700] text-[#282938] leading-[44.8px] ">
+                        Easy Rent
+                      </div>
+                      <div className="mt-[10.333px] text-[21.333px] text-[#1C1E53] font-[400] leading-[32px] ">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros.
+                      </div>
+                    </div>
+                    <div className="mt-[32px]">
+                      <div className="flex items-center justify-start gap-[16px] ">
+                        <div className="flex items-center gap-[16px]  pb-[10.67px] border-b-[1.333px] border-b-[#5E3BEE] hover:cursor-pointer">
+                          <div className="text-[18.667px] font-[600] leading-[28px] ">
+                            View In Dribbble
+                          </div>
+                          <div>
+                            <svg
+                              width="19"
+                              height="19"
+                              viewBox="0 0 19 19"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M4.00004 1.66675H17.3334V15.0001M17.3334 1.66675L1.33337 17.6667L17.3334 1.66675Z"
+                                stroke="black"
+                              />
+                            </svg>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </AnimationOnScroll>
             </div>
           </div>
         </div>
